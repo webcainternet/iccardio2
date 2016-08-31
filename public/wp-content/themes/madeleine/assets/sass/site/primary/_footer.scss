@@ -1,0 +1,211 @@
+.site-footer {
+  margin-top: 38px;
+    .home &{
+      margin: 0;
+    }
+}
+
+.contacts-list, .hours-list {
+  .fa {
+    padding-left: 48px;
+    position: relative;
+    margin-top: 6px;
+    &::before {
+      height: 36px;
+      width: 36px;
+      line-height: 36px;
+      text-align: center;
+      border: 1px solid;
+      border-radius: 50%;
+      position: absolute;
+      top: -5px;
+      left: 0;
+    }
+    @include media-breakpoint-only(md) {
+      padding-left: 0;
+      &::before {
+        position: relative;
+        display: block;
+        left: auto;
+        right: auto;
+        top: auto;
+        text-align: center;
+        margin-bottom: 10px;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  em {
+    display: block;
+    margin-bottom: 9px;
+    @include transition(.3s ease all);
+  }
+  li {
+    margin-top: 0;
+    &::before {
+      top: -4px;
+    }
+    em {
+      display: inline-block;
+    }
+    & + li {
+      margin-top: 20px;
+    }
+  }
+}
+
+.footer-area,
+.tm_pb_widget_area {
+  padding-top: 25px;
+  padding-bottom: 27px;
+
+  p, address {
+    font-style: normal;
+    &.contact-info-heading {
+      font-size: 19px;
+      line-height: 1.2;
+      margin-top: 17px;
+      margin-bottom: 0;
+      text-transform: none;
+    }
+
+    & + p, & + address {
+      margin-top: 7px;
+    }
+
+    font-size: 14px;
+    line-height: 23px;
+    text-transform: uppercase;
+  }
+
+  .widget_text {
+    .contact-info {
+      .fa {
+        position: relative;
+        &:before {
+          font-size: 20px;
+          height: 23px;
+          width: 23px;
+          line-height: 23px;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .widget_text.widget ul li {
+    margin-top: 0;
+    &::before {
+      top: -4px;
+    }
+    em {
+      display: inline-block;
+    }
+    & + li {
+      margin-top: 20px;
+    }
+  }
+  .footer-area--centered.widget{
+  }
+  .widget ul li {
+    margin-top: 5px;
+  }
+}
+
+.footer-container {
+  padding: 12px 30px;
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border: 1px solid;
+  }
+
+  .footer-copyright {
+    font-size: 12px;
+    line-height: 26px;
+    text-transform: uppercase;
+    margin-top: 11px;
+    margin-bottom: 10px;
+    letter-spacing: 1.6px;
+    margin-left: 13px;
+  }
+}
+
+.site-info {
+  .footer-logo {
+    margin: 47px 0 11px 7px;
+  }
+
+  &__flex {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -ms-flex-line-pack: stretch;
+    -webkit-align-content: stretch;
+    align-content: stretch;
+    align-items: center;
+    -ms-flex-align: start;
+    -webkit-align-items: flex-start;
+    @include media-breakpoint-up(md) {
+      -webkit-flex-direction: row;
+      flex-direction: row;
+    }
+
+    .footer-logo {
+      -webkit-order: 0;
+      order: 0;
+      -webkit-flex: 0 1 auto;
+      flex: 0 1 auto;
+      -webkit-align-self: center;
+      align-self: center;
+    }
+    .social-list {
+      -webkit-order: 1;
+      order: 1;
+      -webkit-flex: 0 1 auto;
+      flex: 0 1 auto;
+      -webkit-align-self: center;
+      align-self: center;
+      white-space: nowrap;
+
+      li > a:hover::before {
+        background-color: transparent;
+      }
+
+      @include media-breakpoint-up(md) {
+        -webkit-order: 2;
+        order: 2;
+      }
+    }
+    .site-info__mid-box {
+      -webkit-order: 2;
+      order: 2;
+      -webkit-flex: 0 1 auto;
+      flex: 0 1 auto;
+      -webkit-align-self: center;
+      align-self: center;
+      text-align: center;
+
+      @include media-breakpoint-up(md) {
+        -webkit-order: 1;
+        order: 1;
+      }
+    }
+  }
+}
+
+@import "footer/layout-default";
+@import "footer/layout-centered";
+@import "footer/layout-minimal";

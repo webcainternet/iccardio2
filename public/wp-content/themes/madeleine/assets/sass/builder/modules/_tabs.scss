@@ -1,0 +1,43 @@
+#tm_builder_outer_content {
+  .tm_pb_module.tm_pb_tabs {
+    .tm_pb_tabs_controls {
+      text-align: center;
+      li {
+        padding: 4px 30px;
+        position: relative;
+        &::before {
+          content: '';
+          height: 2px;
+          width: auto;
+          position: absolute;
+          bottom: -2px;
+          left: 10px;
+          right: 10px;
+          border-radius: 0;
+          top: auto;
+          @include translate(0, 0);
+          @include transition(.5s ease all);
+          @include scale(0);
+          opacity: 0;
+        }
+
+        &:hover::before {
+          @include scale(1);
+          opacity: 1;
+        }
+
+        &.tm_pb_tab_active {
+          bottom: 0;
+          &::before {
+            @include scale(1);
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    .tm_pb_all_tabs {
+      padding: 10px 0 1px;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+#tm_builder_outer_content {
+  .tm_pb_social_media_follow.tm_pb_module {
+    li {
+      a.icon {
+        height: auto;
+        width: auto;
+      }
+      &:before{
+        display: none;
+      }
+    }
+    li + li {
+      margin-top: 0;
+      margin-left: 16px;
+    }
+  }
+}

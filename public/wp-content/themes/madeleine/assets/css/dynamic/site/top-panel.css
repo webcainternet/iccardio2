@@ -1,0 +1,39 @@
+.site-header .site-info .phone__info a, .site-header .site-info .time__info em{
+	color: $regular_link_color;
+}
+
+.site-header .site-info .phone__info a:hover{
+	color:$regular_accent_color_1;
+}
+
+.site-header .site-info .phone__info::before,
+.site-header .site-info .time__info::before,
+.site-header .site-info .phone__info h6::before,
+.site-header .site-info .time__info h6::before {
+	border-color: $regular_accent_color_1;
+	color: $regular_accent_color_1;
+}
+
+.header-container .site-menu .header__search .search-form__submit {
+	color: $regular_accent_color_1;
+}
+
+.header-container .site-menu .header__search .search__toggle:hover {
+	color: $regular_accent_color_1;
+}
+
+.header-container .site-menu .header__search .search-form__submit:hover {
+	color: $regular_text_color;
+}
+
+header.site-header .header-container .main-navigation .menu-toggle::before {
+	color: $regular_accent_color_1;
+}
+
+header.site-header .header-container .main-navigation .menu-toggle:hover::before {
+	color: $regular_text_color;
+}
+
+.header-container .site-branding .site-description {
+	color: $regular_link_color;
+}

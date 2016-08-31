@@ -1,0 +1,40 @@
+.btn.btn-secondary,
+.invert .btn {
+	background: $invert_accent_color_2;
+}
+.btn.btn-secondary:hover,
+.invert .btn:hover {
+	background: @darken( $invert_accent_color_2, 15 );
+	color: $invert_link_color;
+}
+
+blockquote {
+	color: $regular_accent_color_1;
+}
+blockquote cite {
+	color: $invert_link_hover_color;
+}
+
+.single-format-quote blockquote:before,
+.single-format-quote blockquote cite {
+	color: $invert_link_hover_color;
+}
+
+ul, ol {
+	color: $regular_text_color;
+}
+
+code {
+	color: $invert_text_color;
+	background: $regular_accent_color_1;
+}
+.top-panel__message a, .top-panel .social-list__items li > a:before {
+	color: $regular_accent_color_1;
+}
+.top-panel__message a:hover {
+	color: $regular_text_color;
+}
+
+.social-list__items li > a:before {
+	color: $regular_accent_color_1;
+}

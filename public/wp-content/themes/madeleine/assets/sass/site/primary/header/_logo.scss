@@ -1,0 +1,13 @@
+.site-logo {
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+	line-height: 1;
+	&__link {
+		text-decoration: none;
+	}
+}
+
+.site-description{
+	display: inline-block;
+}

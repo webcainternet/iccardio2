@@ -1,0 +1,114 @@
+.page .entry-content {
+
+  h1 {
+    margin-bottom: 26px;
+    line-height: .85;
+  }
+
+  h2 {
+    margin-top: 14px;
+  }
+  h3 {
+    margin-top: 22px;
+  }
+  h4 {
+    margin-top: 45px;
+    margin-bottom: 10px;
+  }
+  h5 {
+    margin-top: 29px;
+    text-transform: uppercase;
+    letter-spacing: 0.55px;
+  }
+  h6 {
+    margin-top: 35px;
+    margin-bottom: 12px;
+  }
+  hr {
+    margin: 55px 0 50px;
+    clear: both;
+  }
+  ul {
+    margin: 0 auto;
+    list-style: none;
+    li {
+      padding-left: 30px !important;
+      font-size: 16px;
+      line-height: 1.5;
+      position: relative;
+      text-align: left;
+      &:before {
+        content: '\f105';
+        font-family: FontAwesome;
+        position: absolute;
+        left: 0;
+      }
+      & + li {
+        margin-top: 16px;
+      }
+    }
+  }
+  ol {
+    list-style: none;
+    margin: 0;
+    counter-reset: li;
+    li {
+      font-size: 16px;
+      line-height: 1.5;
+      position: relative;
+      &::before {
+        content: counter(li, decimal-leading-zero) ".";
+        counter-increment: li;
+        font-weight: 700;
+        margin-right: 15px;
+      }
+      & + li {
+        margin-top: 16px;
+      }
+    }
+  }
+  blockquote + hr {
+    margin-top: 25px;
+  }
+  a {
+    text-decoration: none;
+  }
+  code {
+    padding: 1px 5px;
+  }
+  p > img {
+    margin-top: 40px;
+    margin-bottom: 35px;
+    &.size-madeleine-post-thumbnail-large {
+      width: 100%;
+    }
+    &.alignleft, &.alignright {
+      margin-top: 5px;
+      margin-bottom: 20px;
+      display: block;
+      margin-left: 0;
+      @include media-breakpoint-up(lg) {
+        display: inline-block;
+        margin-bottom: 65px;
+        margin-left: 30px;
+      }
+    }
+    &.alignleft {
+      float: none;
+      margin-right: auto;
+      margin-left: 0;
+      @include media-breakpoint-up(lg) {
+        float: left;
+        margin-right: 30px;
+      }
+    }
+    &.alignright {
+      float: none;
+      margin-left: auto;
+      @include media-breakpoint-up(lg) {
+        float: right;
+        margin-left: 30px;
+      }
+    }
+  }
+}

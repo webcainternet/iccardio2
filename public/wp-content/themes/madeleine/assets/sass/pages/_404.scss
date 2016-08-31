@@ -1,0 +1,27 @@
+.not-found {
+  padding: 40px 30px 30px 30px;
+  text-align: center;
+  margin: 0 0 10px;
+  .page-content {
+    margin: 3px 0 0;
+  }
+  .page-title {
+    margin: 0;
+  }
+  h4 {
+    margin-top: 0;
+    margin-bottom: 37px;
+    font-weight: 700;
+    font-size: 50px;
+  }
+  .search-form {
+    width: 100%;
+    margin: 20px auto 0;
+    @include media-breakpoint-up(sm) {
+      max-width: 370px;
+    }
+    &__submit {
+      padding: 13px 0;
+    }
+  }
+}

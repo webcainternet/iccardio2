@@ -1,0 +1,28 @@
+.header-container .header_left_text .phone-info p {
+  color: $regular_link_color;
+}
+
+.header-container .header_left_text .phone-info p:before {
+  color: $regular_link_color;
+}
+
+.header-container .header_left_text .phone-info a {
+  color: $regular_text_color;
+  font-family: @font_family( $h5_font_family );
+}
+.header-container .header_left_text .phone-info a:hover {
+  color: $regular_accent_color_1;
+}
+
+.header-container .site-branding .site-description {
+  font-family: @font_family( $h5_font_family );
+}
+
+@media (min-width: 768px) {
+  .site-header .header-container .site-menu.isStuck {
+    background: $invert_text_color;
+  }
+  .site-header .header-container .site-menu.isStuck::before {
+    background: $invert_text_color;
+  }
+}

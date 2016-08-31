@@ -1,0 +1,3 @@
+.invert .instagram__cover { background-color: $invert_link_color; }
+.instagram__cover,
+.invert .instagram__cover:before { color: $regular_accent_color_1; }

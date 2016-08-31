@@ -1,0 +1,20 @@
+.tm_pb_builder #tm_builder_outer_content .tm_pb_promo.invert {
+  color: $invert_text_color;
+}
+.tm_pb_builder #tm_builder_outer_content .tm_pb_promo.invert h1, .tm_pb_builder #tm_builder_outer_content .tm_pb_promo.invert h2, .tm_pb_builder #tm_builder_outer_content .tm_pb_promo.invert h3, .tm_pb_builder #tm_builder_outer_content .tm_pb_promo.invert h4, .tm_pb_builder #tm_builder_outer_content .tm_pb_promo.invert h5, .tm_pb_builder #tm_builder_outer_content .tm_pb_promo.invert h6 {
+  color: $invert_text_color;
+}
+.tm_pb_builder #tm_builder_outer_content .tm_pb_promo.invert .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .tm_pb_contact_submit, .tm_pb_builder #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .tm_pb_promo.invert .tm_pb_contact_submit, .tm_pb_builder #tm_builder_outer_content .tm_pb_promo.invert a.tm_pb_button, .tm_pb_builder #tm_builder_outer_content .tm_pb_promo.invert .btn, .tm_pb_builder #tm_builder_outer_content .tm_pb_promo.invert .tm_pb_post .more-link, .tm_pb_builder #tm_builder_outer_content .tm_pb_post .tm_pb_promo.invert .more-link, .tm_pb_builder #tm_builder_outer_content .tm_pb_promo.invert .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button, .tm_pb_builder #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .tm_pb_promo.invert .button,
+.tm_pb_builder #tm_builder_outer_content .tm_pb_promo.invert .widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button,
+.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .tm_pb_builder #tm_builder_outer_content .tm_pb_promo.invert .button, .tm_pb_builder #tm_builder_outer_content .tm_pb_promo.invert body .booked-modal input.button-primary[type="submit"], body .booked-modal .tm_pb_builder #tm_builder_outer_content .tm_pb_promo.invert input.button-primary[type="submit"] {
+  border-color: $invert_text_color;
+  color: $regular_h2_color;
+  background: $invert_text_color;
+}
+.tm_pb_builder #tm_builder_outer_content .tm_pb_promo.invert .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .tm_pb_contact_submit:hover, .tm_pb_builder #tm_builder_outer_content .tm_pb_contact_form_container .tm_pb_contact_form .tm_contact_bottom_container .tm_pb_promo.invert .tm_pb_contact_submit:hover, .tm_pb_builder #tm_builder_outer_content .tm_pb_promo.invert a.tm_pb_button:hover, .tm_pb_builder #tm_builder_outer_content .tm_pb_promo.invert .btn:hover, .tm_pb_builder #tm_builder_outer_content .tm_pb_promo.invert .tm_pb_post .more-link:hover, .tm_pb_builder #tm_builder_outer_content .tm_pb_post .tm_pb_promo.invert .more-link:hover, .tm_pb_builder #tm_builder_outer_content .tm_pb_promo.invert .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button:hover, .tm_pb_builder #tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .tm_pb_promo.invert .button:hover,
+.tm_pb_builder #tm_builder_outer_content .tm_pb_promo.invert .widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button:hover,
+.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .tm_pb_builder #tm_builder_outer_content .tm_pb_promo.invert .button:hover, .tm_pb_builder #tm_builder_outer_content .tm_pb_promo.invert body .booked-modal input.button-primary[type="submit"]:hover, body .booked-modal .tm_pb_builder #tm_builder_outer_content .tm_pb_promo.invert input.button-primary[type="submit"]:hover {
+  color: $invert_text_color;
+  background: $regular_accent_color_1;
+  border-color: $regular_accent_color_1;
+}

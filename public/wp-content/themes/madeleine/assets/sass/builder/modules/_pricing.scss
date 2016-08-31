@@ -1,0 +1,113 @@
+#tm_builder_outer_content {
+  .tm_pb_column {
+    .tm_pb_module.tm_pb_pricing {
+      display: flex;
+      flex-wrap: wrap;
+      .tm_pb_pricing_table {
+        margin-top: 0;
+        margin-bottom: 30px;
+        width: 100%;
+        @include media-breakpoint-up(lg) {
+          width: 33.3333333%;
+          margin-bottom: 21px;
+          margin-top: 21px;
+        }
+
+        &.tm_pb_featured_table {
+          margin-top: 0;
+          margin-bottom: 0;
+          .tm_pb_pricing_heading {
+            display: flex;
+            flex-wrap: wrap;
+            padding-top: 25px;
+            .tm_pb_pricing_title {
+              flex: 1 1 100%;
+              order: 2;
+            }
+            .tm_pb_best_value {
+              flex: 1 1 100%;
+              order: 1;
+            }
+          }
+        }
+
+        .tm_pb_pricing_content_top {
+          position: relative;
+          padding: 0 20px;
+          border-bottom: 1px solid rgba(#616262, .2);
+
+          .tm_pb_tm_price {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px 0px 20px 45px;
+
+            .tm_pb_dollar_sign {
+              margin-right: 10px;
+              font-weight: 800;
+              position: relative;
+            }
+
+            .tm_pb_sum {
+              font-weight: 800;
+              font-size: 60px;
+            }
+
+            .tm_pb_frequency {
+              font-style: italic;
+              margin-left: 15px;
+              position: relative;
+              &:before {
+                content: '/';
+                position: absolute;
+                top: 0;
+                right: 100%;
+                margin-right: 2px;
+              }
+            }
+          }
+        }
+      }
+
+      .tm_pb_pricing_heading {
+        padding-top: 35px;
+        padding-bottom: 0;
+        margin: 0;
+        .tm_pb_pricing_title {
+          font-weight: 400;
+          margin: 0;
+          padding: 0 50px;
+        }
+      }
+
+      .tm_pb_pricing_content {
+        padding: 20px 25px;
+        .tm_pb_pricing {
+          li {
+            padding: 0 !important;
+            text-align: center;
+            &::before {
+              content: '';
+              top: 50%;
+              left: 4px;
+              width: 0;
+              height: 0;
+              @include media-breakpoint-up(lg) {
+                height: 5px;
+                width: 5px;
+              }
+            }
+          }
+        }
+      }
+
+      .tm_pb_pricing_table_button {
+        margin: 0 15px;
+        padding: 15px 20px;
+        @include media-breakpoint-only(lg){
+          margin: 0 5px;
+        }
+      }
+    }
+  }
+}

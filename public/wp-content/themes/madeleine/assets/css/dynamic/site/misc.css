@@ -1,0 +1,132 @@
+#toTop {
+	color: $invert_text_color;
+	background: $regular_accent_color_1;
+}
+#toTop:before {
+	color: $invert_text_color;
+}
+#toTop span{
+	color: $invert_text_color;
+}
+#toTop:hover {
+	background: $regular_text_color;
+}
+#toTop:hover span{
+	color: $invert_text_color;
+}
+
+.tm-folding-cube .tm-cube:before {
+	background-color: $regular_accent_color_1;
+}
+
+.page-preloader-cover {
+	background-color: $invert_text_color;
+}
+
+.cssload-loader {
+	background-color: $regular_accent_color_1;
+}
+
+/*link-box*/
+
+#tm_builder_outer_content .tm_pb_link_box .tm_pb_link_box_title {
+	font-family: $h5_font_family;
+}
+
+#tm_builder_outer_content .tm_pb_link_box.text-color-1 {
+	color: #cb8e73;
+}
+#tm_builder_outer_content .tm_pb_link_box.text-color-1 h2 {
+	color: #cb8e73;
+}
+#tm_builder_outer_content .tm_pb_link_box.text-color-1 .tm_pb_button {
+	color: #cb8e73;
+	border-color: #cb8e73;
+}
+#tm_builder_outer_content .tm_pb_link_box.text-color-1 .tm_pb_button:hover {
+	background: #cb8e73 !important;
+}
+#tm_builder_outer_content .tm_pb_link_box.text-color-2 {
+	color: #80a9c9;
+}
+#tm_builder_outer_content .tm_pb_link_box.text-color-2 h2 {
+	color: #80a9c9;
+}
+#tm_builder_outer_content .tm_pb_link_box.text-color-2 .tm_pb_button {
+	color: #80a9c9;
+	border-color: #80a9c9;
+}
+#tm_builder_outer_content .tm_pb_link_box.text-color-2 .tm_pb_button:hover {
+	background: #80a9c9 !important;
+}
+#tm_builder_outer_content .tm_pb_link_box.text-color-3 {
+	color: #5e6d86;
+}
+#tm_builder_outer_content .tm_pb_link_box.text-color-3 h2 {
+	color: #5e6d86;
+}
+#tm_builder_outer_content .tm_pb_link_box.text-color-3 .tm_pb_button {
+	color: #5e6d86;
+	border-color: #5e6d86;
+}
+#tm_builder_outer_content .tm_pb_link_box.text-color-3 .tm_pb_button:hover {
+	background: #5e6d86 !important;
+}
+#tm_builder_outer_content .tm_pb_link_box.text-color-4 {
+	color: #b17d8f;
+}
+#tm_builder_outer_content .tm_pb_link_box.text-color-4 h2 {
+	color: #b17d8f;
+}
+#tm_builder_outer_content .tm_pb_link_box.text-color-4 .tm_pb_button {
+	color: #b17d8f;
+	border-color: #b17d8f;
+}
+#tm_builder_outer_content .tm_pb_link_box.text-color-4 .tm_pb_button:hover {
+	background: #b17d8f !important;
+}
+
+.not-found .search-form__submit:hover {
+	color: $invert_text_color;
+}
+
+.page .entry-content ol li::before {
+	font-family: @font_family( $h5_font_family );
+}
+
+.swiper-wrapper .post__cats a {
+	color: $invert_text_color;
+	background-color: $regular_accent_color_1;
+}
+
+#tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td,
+.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td {
+	border-color: $invert_link_hover_color;
+}
+
+#tm_builder_outer_content .tm_pb_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button:hover,
+.widget.widget_booked_calendar .booked-calendar-shortcode-wrap .booked-calendar-wrap .booked-calendar tbody tr.entryBlock td .button:hover {
+	border-color: $regular_h2_color;
+}
+
+.breadcrumbs {
+	background: $invert_accent_color_1;
+}
+
+.breadcrumbs:before, .breadcrumbs:after {
+	background: $invert_accent_color_1;
+}
+
+.breadcrumbs__item {
+	color: $regular_text_color;
+}
+.breadcrumbs__item-link {
+	color: $regular_accent_color_1;
+}
+.breadcrumbs__item-sep {
+	color: $invert_link_hover_color;
+}
+
+#tm_builder_outer_content .tm_audio_container .mejs-controls .mejs-time-rail .mejs-time-float {
+	color: $invert_text_color !important;
+}

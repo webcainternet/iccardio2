@@ -1,0 +1,195 @@
+.sticky__label {
+	color: $invert_text_color;
+	background: $regular_accent_color_1;
+	background: -webkit-linear-gradient(to right, $regular_accent_color_1 0%, @darken( $regular_accent_color_1, 10% ) 100%);
+	background: linear-gradient(to right, $regular_accent_color_1 0%, @darken( $regular_accent_color_1, 10% ) 100%);
+}
+
+.post__cats a, .post__cats{
+	color: $regular_accent_color_1
+}
+
+.post__cats a:hover{
+	color: $regular_link_hover_color;
+}
+
+
+.entry-meta * + *::before,
+.post__tags a + a::before{
+	background: @alpha($regular_link_color, 20);
+}
+
+.post-featured-content.format-quote.invert {
+	color: $invert_text_color;
+	background-color: $regular_accent_color_2;
+}
+.post__tags {
+	color: $regular_link_color;
+}
+.post-author__holder {
+	background-color: $regular_accent_color_1;
+}
+
+.post-author__title a:hover {
+	color:$regular_text_color;
+}
+.post-format-link {
+	background: @alpha( $regular_text_color, 90 );
+}
+
+.post-format-link:hover {
+	background: @alpha(  $regular_accent_color_1, 90 );
+}
+
+.post-format-quote {
+	font-family: $h4_font_family;
+	font-size: $h4_font_size{px};
+	font-style: $h5_font_style;
+	color: $regular_text_color;
+}
+.post-format-quote:before,
+.post-format-quote cite,
+#cancel-comment-reply-link {
+	color: $regular_accent_color_1;
+}
+
+#cancel-comment-reply-link:hover {
+	color: $regular_link_hover_color;
+}
+
+.post-author{
+	color: $regular_link_color;
+}
+
+.post-author a{
+	 color: $regular_text_color;
+ }
+
+.post-author a:hover,
+.post__tags a:hover{
+	color: $regular_link_hover_color;
+}
+
+.post__comments,
+.post__comments a,
+.post__tags a {
+	color: $regular_accent_color_1;
+}
+
+.post__comments a:hover{
+	color: $regular_text_color;
+}
+
+.post-navigation .nav-previous a, .post-navigation .nav-next a{
+	color: $regular_accent_color_1;
+}
+
+.post-navigation .nav-previous a:hover, .post-navigation .nav-next a:hover{
+	color:$regular_link_hover_color;
+}
+
+.post-navigation .nav-next > a::after,
+.post-navigation .nav-previous > a::before {
+	color: $regular_text_color;
+}
+
+.post-navigation .nav-next > a:hover::after,
+.post-navigation .nav-previous > a:hover::before {
+	color:$regular_link_hover_color;
+}
+
+.comments-title,
+.comment-reply-title {
+	color: $regular_text_color;
+}
+
+.comment-body .fn a{
+	 color: $regular_text_color;
+ }
+
+.comment-body .fn a:hover{
+	color:$regular_link_hover_color;
+}
+
+.comment-body{
+	background: @alpha($regular_link_color, 20);
+}
+
+.comment-body .fn + .comment-date::before {
+	background: @alpha($regular_link_color, 20);
+}
+
+.comment-reply-link {
+	color: $regular_accent_color_1;
+}
+
+.comment-reply-link:hover {
+	color:$regular_link_hover_color;
+}
+
+.comment-form__field {
+	color: $regular_link_color;
+}
+
+.comment-form .form-submit .submit {
+	font-family: $h5_font_family;
+}
+
+.comment-form .form-submit .submit:hover {
+	color: $invert_text_color;
+}
+
+.comment-form .logged-in-as, .comment-form .comment-notes {
+	color: $regular_link_color;
+}
+
+.swiper-button-next, .swiper-button-prev {
+	color: $invert_text_color;
+	background: $regular_accent_color_1;
+}
+
+.swiper-button-next:hover, .swiper-button-prev:hover {
+	color: $invert_text_color;
+	background: $regular_accent_color_2;
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm_pb_post .tm_quote_content blockquote h4 q, .tm_pb_builder #tm_builder_outer_content .tm_pb_post .tm_quote_content .post-format-quote h4 q {
+	color: $invert_text_color;
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm_pb_post .entry-title {
+	font-family: $h4_font_family;
+	color: $regular_h2_color;
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm_pb_post .entry-title a {
+	color: $regular_h2_color;
+}
+.tm_pb_builder #tm_builder_outer_content .tm_pb_post .entry-title a:hover {
+	color: $regular_accent_color_1;
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm_pb_post .tm_pb_post_meta {
+	font-family: $h5_font_family;
+	color: $regular_link_color;
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm_pb_post .tm_pb_post_meta .author {
+	color: $regular_accent_color_1;
+}
+
+.post-thumbnail__format-link .post-format-quote {
+	color: $invert_text_color;
+}
+.post-thumbnail__format-link .post-format-quote:before {
+	color: $invert_text_color;
+}
+
+.post-format-quote img:before {
+	background: @alpha($regular_accent_color_1, 50);
+}
+
+.post_format-post-format-quote .post-thumbnail:before {
+	background: @alpha($regular_accent_color_1, 50);
+}
+

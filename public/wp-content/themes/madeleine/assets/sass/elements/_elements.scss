@@ -1,0 +1,114 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+  box-sizing: inherit;
+}
+
+body {
+  background: $color__background-body; /* Fallback for when there is no custom background color defined. */
+}
+
+blockquote {
+  quotes: "\f10e" "";
+
+  &:before {
+    content: open-quote;
+  }
+}
+
+blockquote {
+  position: relative;
+  margin: 0;
+  padding: 10px 10px 20px 85px;
+  h4 {
+    .page .entry-content & {
+      margin-top: 0;
+    }
+  }
+  h6 {
+    .page .entry-content & {
+      margin-top: 15px;
+    }
+    .single & {
+      margin-top: 17px;
+    }
+  }
+  q {
+    font-style: italic;
+    font-size: 20px;
+    &:before, &:after {
+      display: none;
+    }
+  }
+  cite {
+    display: block;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    span {
+      font-weight: 400;
+      margin-right: 3px;
+    }
+  }
+  &:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-family: 'FontAwesome';
+
+    font-size: 30px;
+    @include media-breakpoint-up(md) {
+      font-size: 40px;
+    }
+    @include media-breakpoint-up(xl) {
+      font-size: 54px;
+    }
+  }
+}
+
+* + blockquote {
+  margin-top: -10px;
+}
+
+.single blockquote + h6,
+blockquote + * {
+  margin-top: 0;
+}
+
+hr {
+  background-color: $color__background-hr;
+  border: 0;
+  height: 1px;
+  margin: 20px -10px 25px;
+  @include media-breakpoint-up(lg) {
+    margin-right: -30px;
+    margin-left: -30px;
+  }
+}
+
+code {
+  padding: 2px 5px;
+}
+
+@import "lists";
+
+img {
+  height: auto; /* Make sure images are scaled correctly. */
+  max-width: 100%; /* Adhere to container width. */
+  .entry-featured-image-url {
+    @extend %make-hover;
+    text-align: center;
+    img {
+      @include media-breakpoint-up(md) {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+@import "tables";

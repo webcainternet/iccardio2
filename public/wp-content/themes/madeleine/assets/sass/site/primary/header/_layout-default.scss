@@ -1,0 +1,108 @@
+.site-header.default {
+
+  .header-container_wrap {
+    .header-flex-container {
+      display: flex;
+      flex-direction: column;
+
+      .header_left_text {
+        order: 1;
+      }
+      .site-branding {
+        order: 3;
+        margin-top: 30px;
+        text-align: center;
+      }
+      .header_right_text {
+        order: 2;
+        margin-top: 30px;
+      }
+      .site-menu {
+        order: 4;
+      }
+
+      @media (min-width: 992px) {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .header_left_text {
+          flex-basis: 50%;
+          margin-top: 36px;
+          .phone-info {
+            @media (min-width: 992px) {
+              margin-left: 45px;
+            }
+            a {
+              margin-left: 0;
+            }
+          }
+        }
+        .site-branding {
+          flex-basis: 100%;
+          text-align: left;
+        }
+        .header_right_text {
+          flex-basis: 50%;
+          margin-top: 31px;
+          .top-panel__message {
+            text-align: right;
+          }
+        }
+        .site-menu {
+          flex-basis: 100%;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+
+  .site-info {
+    flex: 1 1 50%;
+  }
+
+  .site-branding {
+    flex: 1 1 50%;
+    .site-description{
+      display: block;
+    }
+    @media (max-width: 600px) {
+      padding: 0;
+    }
+  }
+
+  .site-info {
+    * + .time__info {
+      margin-left: 90px;
+
+      @media (max-width: 1227px) {
+        margin-left: 60px;
+      }
+    }
+  }
+
+  .site-menu {
+    margin-top: 26px;
+    flex: 1 1 100%;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      left: -10000px;
+      right: -10000px;
+      top: 0;
+      width: 100000px;
+      height: 1px;
+      background: $color__background-hr;
+    }
+  }
+
+  .main-navigation {
+    clear: both;
+    padding: 13px 0 ;
+    flex: 1 1 50%;
+    text-align: center;
+    @media (min-width: 992px) {
+      text-align: left;
+    }
+  }
+}

@@ -1,0 +1,65 @@
+.subscribe-block__input { color: $regular_text_color; }
+
+.widget-subscribe {
+	background: $regular_accent_color_1;
+	color: $invert_text_color;
+}
+
+.widget-subscribe .social-list__items li > a::before {
+	color: $invert_text_color;
+}
+
+.footer-area .widget-subscribe{
+	background: transparent;
+	color: $regular_accent_color_1;
+}
+
+.footer-area .widget-subscribe .social-list__items li > a::before{
+	color: $regular_accent_color_1;
+}
+
+.footer-area .widget-subscribe .widget-title, .footer-area .widget-subscribe .follow-block__message {
+	color: $regular_accent_color_1;
+}
+
+
+.widget-subscribe .subscribe-block__submit.btn,
+.widget-subscribe .invert .btn{
+    background: $regular_text_color;
+}
+
+.widget-subscribe .subscribe-block__submit.btn:hover,
+.widget-subscribe .invert .btn:hover{
+    background:$regular_link_hover_color;
+}
+
+.follow-block + .subscribe-block {
+    border-color:  @alpha($regular_text_color, 20);
+}
+
+.footer-area .widget-subscribe{
+	background: transparent;
+}
+
+.footer-area .follow-block{
+	text-align: center;
+    padding-top: 10px;
+}
+
+@media (max-width: 768px){
+	.footer-area .follow-block{
+		padding: 0;
+	}
+}
+
+.footer-area .follow-block .social-list .social-list__items li{
+	margin-right: 11px;
+	margin-left: 11px;
+}
+
+.footer-area .follow-block .social-list__items li > a:before{
+	opacity: .3;
+}
+.footer-area .follow-block .social-list__items li > a:hover:before{
+	opacity: 1;
+}

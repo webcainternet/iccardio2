@@ -1,0 +1,51 @@
+.main-navigation ul.menu > li > a{
+	color: $regular_link_hover_color;
+}
+
+.main-navigation ul ul.sub-menu li {
+	background-color: $invert_accent_color_1;
+}
+
+.main-navigation ul ul.sub-menu li > ul {
+	background: $invert_text_color;
+}
+
+.main-navigation ul ul.sub-menu {
+	border-color: $invert_accent_color_2;
+}
+
+.menu-item_description {
+	color: $regular_text_color;
+}
+
+.main-navigation a {
+	font-family: @font_family( $h5_font_family );
+}
+
+.main-navigation ul.menu > li > a:after {
+	background-color: $invert_link_color;
+}
+
+.main-navigation ul.menu > li:hover > a,
+.main-navigation ul.menu > li.menu-hover > a,
+.main-navigation ul.menu > li.current_page_item > a,
+.main-navigation ul.menu > li.current-menu-item > a,
+.main-navigation ul.menu > li.current_page_ancestor > a:hover {
+	color: $regular_accent_color_1;
+}
+.main-navigation ul ul a {
+	color: $regular_link_hover_color;
+}
+.main-navigation ul.sub-menu > li > a:hover,
+.main-navigation ul.sub-menu > li.menu-hover > a,
+.main-navigation ul.sub-menu > li.current_page_item > a,
+.main-navigation ul.sub-menu > li.current-menu-item > a,
+.main-navigation ul.sub-menu > li.current_page_ancestor > a:hover {
+	color: $regular_accent_color_1;
+}
+.main-navigation ul.sub-menu {
+	background: $regular_accent_color_3;
+}
+.site-header .header-container .site-menu.isStuck {
+	background: $invert_accent_color_1;
+}
