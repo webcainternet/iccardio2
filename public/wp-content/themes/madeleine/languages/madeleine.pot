@@ -2075,7 +2075,7 @@ msgstr ""
 
 #: searchform.php:14
 msgctxt "placeholder"
-msgid "Digite sua busca "
+msgid "Enter keyword "
 msgstr ""
 
 #: template-parts/comment.php:6
